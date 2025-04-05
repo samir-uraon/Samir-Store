@@ -55,7 +55,7 @@ const Home = () => {
 					</div>
 
 					<div className="portfoliophoto">
-						<img src="../public/Mask group.png" alt="" />
+						<img src="../Mask group.png" alt="" />
 					</div>
 
 				</div>
