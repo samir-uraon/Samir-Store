@@ -124,6 +124,11 @@ h1 {
 }
 @media screen and (max-width:380px) {
 	:root{
+		font-size: 45%;
+	}
+}
+@media screen and (max-width:380px) {
+	:root{
 		font-size: 40%;
 	}
 }
