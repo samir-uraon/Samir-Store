@@ -1,0 +1,250 @@
+.main{
+	width: 100%;
+	height: 90%;
+	font-size: 62.5%;
+	display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+
+}
+#ContactHead{
+	margin-top: 0rem;
+	font-size: 2rem;
+}
+.detailsdiv{
+	margin-top: 4rem;
+	width: 100%;
+display: flex;
+justify-content:center;
+align-items: center;
+
+}
+.info{
+	box-sizing: border-box;
+	height: 27rem;
+	transition: all 0.3s linear;
+	background: linear-gradient(to bottom right,rgb(41, 134, 220),rgb(58, 58, 218));
+	padding: 1.4rem 2.9rem;
+	border-radius: 2rem 0 0 2rem;
+	& h1{
+		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+}
+
+.info p{
+	width: 18rem;
+	font-size: 1.1rem;
+	margin-top: 1rem;
+margin-left: -0.2rem;
+color: rgb(190, 186, 186);
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+;
+}
+.info .icons{
+	margin-top: 3rem;
+margin-left: -1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.2rem;
+	& .firsti,.secondi{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	gap: 1rem;
+	& p{
+		margin-top: -0.03rem;
+		color: aliceblue;
+		font-family: monospace;
+		font-size: 1.1rem;
+	}
+	}
+	.secondi p{
+		margin-top: 1.6rem;
+	}
+}
+.formdiv{
+	width: 40rem;
+		height: 27rem;
+		background: #ecf0f3;
+		padding:1.4rem 2rem;
+		border-radius:0 2rem 2rem 0;
+
+	& h1{
+		font-family: monospace;
+	color:black;
+}
+}
+.formdiv form{
+	display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+& input{
+	width: 17rem;
+}
+& input,textarea{
+	border: none;
+	
+	background-color:white;
+	color: rgb(135, 132, 132);
+	padding: 1rem 1rem;
+	box-shadow:inset 0.8rem 0.8rem 0.8rem #ecf0f3, inset -0.8rem -0.8rem 0.8rem #ffffff;
+outline-style:double;
+border-radius: 0.5rem;
+}
+& textarea{
+	margin-top: 0.5rem;
+	padding: 0.8rem 1.5rem 3rem 1.5rem;
+	width: 100%;
+	margin-top: 1.5rem;
+	resize: none;
+}
+}
+.one ,.two{
+	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
+	margin-top: 1.5rem;
+	gap: 1.7rem;
+}
+.one{
+margin-top: 1.8rem;
+}
+.icons2{
+	margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.9rem;
+	& #f{
+		cursor: pointer;
+		background-color:rgb(10, 194, 240);
+		transition: all 0.25s linear;
+	}
+	& #f:hover{
+background-color: black;
+color: rgb(10, 194, 240);
+	}
+}
+.formdiv form button{
+margin-top: 1.1rem;
+width: 100%;
+padding: 0.5rem 0;
+border-radius: 0.5rem;
+border: 0.15rem solid black;
+font-family: monospace;
+transition: all 0.25s linear;
+font-size: 1.3rem;
+&:hover{
+	background-color: cyan;
+	
+color: black;
+}
+}
+
+@media screen and (max-width:700px){
+	.formdiv form input{
+		padding: 0.8rem 0.5rem;
+	}
+}
+@media screen and (max-width:630px){
+.formdiv{
+	width: 35rem;
+}
+	.formdiv form input{
+width: 14.6rem;
+		font-size:1.3rem;
+		padding: 0.5rem 0.3rem;	
+	}
+	.formdiv form button{
+		margin-top: 2rem;
+	}
+}
+@media screen and (max-width:550px){
+	.formdiv{
+		width: 30rem;
+	}
+		.formdiv form input{
+	width: 12.6rem;
+			font-size:1.3rem;
+			padding: 0.5rem 0.3rem;	
+		}
+		.formdiv form button{
+			margin-top: 2rem;
+		}
+	}
+	@media screen and (max-width:500px){
+		.formdiv{
+			width: 27rem;
+		}
+			.formdiv form input{
+		width: 10.6rem;
+				font-size:1.1rem;
+				padding: 0.5rem 0.3rem;	
+			}
+			.formdiv form button{
+				margin-top: 2rem;
+			}
+		}
+
+		@media screen and (max-width:480px){
+		
+			.info{
+				position: absolute;
+	transform: scale(0.1);
+	opacity: 0;
+			}
+			.formdiv{
+border-radius: 2rem;
+				width: 90%;
+			
+			}
+			.info,.formdiv{
+				height: 30rem;
+			}
+			.formdiv h1{
+				font-size: 2rem;
+			}
+			.formdiv form{
+				margin-top: 1rem;
+				& textarea{
+					width: 95%;
+				}
+			}
+			.formdiv form input{
+				width: 20rem;
+						font-size:1.4rem;
+						padding: 0.8rem 1rem;	
+					}
+					.formdiv form button{
+						margin-top: 2rem;
+						width:95%;
+					}
+		}
+		@media screen and (max-width:450px) {
+			.formdiv form input{
+				width: 18rem;
+						font-size:1.2rem;
+						padding: 0.8rem 1rem;	
+					}
+		}
+		@media screen and (max-width:370px) {
+			.formdiv form input{
+				width: 15rem;
+						font-size:1.2rem;
+						padding: 0.8rem 1rem;	
+					}
+		}
+		@media screen and (max-width:320px) {
+			.formdiv{
+				font-size: 40%;
+			}
+			.formdiv form input{
+				width: 13rem;
+						font-size:1.2rem;
+						padding: 0.8rem 1rem;	
+					}
+		}
