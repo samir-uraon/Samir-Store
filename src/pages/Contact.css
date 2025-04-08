@@ -152,8 +152,8 @@ font-family: monospace;
 transition: all 0.25s linear;
 font-size: 1.3rem;
 &:hover{
-	background-color: cyan;
 	
+	background-color: cyan;
 color: black;
 }
 }
