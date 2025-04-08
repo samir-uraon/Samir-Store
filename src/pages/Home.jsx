@@ -50,7 +50,7 @@ const Home = () => {
 }}/>
 					</div>
 					<div id='readmore'>
-						<button><a href="#">Read More</a></button>
+						<button>Read More</button>
 					</div>
 					</div>
 
