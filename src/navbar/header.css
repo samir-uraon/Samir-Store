@@ -1,7 +1,7 @@
 
 .header{
 margin: 0;
-padding: 0.5rem;
+padding: 0.6rem;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -30,7 +30,7 @@ justify-content:flex-end;
 
 .header .horizontal{
 	display: flex;
-	
+
 }
  
 .header .vertical{
@@ -42,7 +42,6 @@ top: 4rem;
 left: 0;
 row-gap: 0rem;
 margin: 0;
-
 background-color: rgb(73, 137, 164);
 
 }

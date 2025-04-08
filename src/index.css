@@ -126,9 +126,7 @@ h1 {
 
 }
 @media screen and (max-width:400px) {
-	.menu-button{
-		display: block;
-	}
+
 	:root{
 		font-size: 50%;
 	}
@@ -154,34 +152,34 @@ h1 {
 @media screen and (max-height:390px) {
 
 	:root{
-		font-size: 50%;
+		font-size: 55%;
 	}
 
 }
 @media screen and (max-height:380px) {
 	:root{
-		font-size: 45%;
+		font-size: 50%;
 	}
 }
 @media screen and (max-height:350px) {
 	:root{
-		font-size: 40%;
+		font-size: 48%;
 	}
 }
 @media screen and (max-height:300px) {
 
 	:root{
-		font-size: 35%;
+		font-size: 45%;
 	}
 
 }
 @media screen and (max-height:280px) {
 	:root{
-		font-size: 33%;
+		font-size: 40%;
 	}
 }
 @media screen and (max-height:250px) {
 	:root{
-		font-size: 30%;
+		font-size: 35%;
 	}
 }
