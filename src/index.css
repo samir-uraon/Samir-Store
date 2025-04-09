@@ -148,7 +148,6 @@ h1 {
 
 
 
-
 @media screen and (max-height:390px) {
 
 	:root{
@@ -173,13 +172,29 @@ h1 {
 	}
 
 }
-@media screen and (max-height:280px) {
+@media screen and (max-height:250px) {
 	:root{
 		font-size: 40%;
 	}
 }
-@media screen and (max-height:250px) {
+@media screen and (max-height:240px) {
+	:root{
+		font-size: 38%;
+	}
+}
+@media screen and (max-height:230px) {
 	:root{
 		font-size: 35%;
+	}
+}
+@media screen and (max-height:220px) {
+	:root{
+		font-size: 33%;
+	}
+}
+
+@media screen and (max-height:200px) {
+	:root{
+		font-size: 30%;
 	}
 }
