@@ -19,13 +19,26 @@ const handalIcon=()=>{
 Initial? Updated(false):Updated(true)
 }
 
+const check=()=>{
+	if(window.innerWidth>480){
+			return "horizontal"
+		}
+	else if(Initial){
+		return "horizontal"
+	}
+	
+	else{
+		return "vertical"
+	}
+
+}
 
 		return (
 
 				<div className='header'>
 					<h3>Samir-Store</h3>
 
-					<ul className={Initial?"horizontal":"vertical"}>
+					<ul className={check()}>
 				<li><NavLink to={"/"}>Home</NavLink></li>
 				<li><NavLink to={"/About"}>About</NavLink></li>
 				<li><NavLink to={"/Products"}>Products</NavLink></li>

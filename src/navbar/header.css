@@ -42,7 +42,7 @@ position: absolute;
 top: 4rem;
 left: 0;
 row-gap: 0rem;
-margin-top: 1rem;
+margin-top: 0.6rem;
 background-color: rgb(73, 137, 164);
 
 }
@@ -149,7 +149,10 @@ font-family: monospace;
 	.header .horizontal li a{
 		padding: 0.3rem 1.2rem;
 	}
-
+	.header{
+		padding: 0.5rem;
+	
+	}
 }
 @media screen and (max-width:510px) {
 	.header .horizontal li a{
@@ -167,10 +170,12 @@ font-family: monospace;
 
 }
 .header{
-	padding: 0.9rem;
+	padding: 0.7rem;
 
 }
-
+.header .vertical{
+	margin-top: 0.2rem;
+}
 }
 
 
@@ -185,7 +190,9 @@ font-family: monospace;
 	.header .vertical a{
 		font-size: 1.5rem;
 	}
-
+	.header .vertical{
+		margin-top: 0.8rem;
+	}
 }
 @media screen and (max-height:250px) {
 
