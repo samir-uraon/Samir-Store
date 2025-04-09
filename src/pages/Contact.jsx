@@ -28,7 +28,7 @@ return bool
 			<>
 			<Header/>
 <div className='main'>
-	<div className="main2">
+
 	<div id='ContactHead'><h2>Contact <span style={usstyle}>Me!</span></h2></div>
 
 	<div className="detailsdiv">
@@ -66,7 +66,7 @@ return bool
 </form>
 	</div>
 
-	</div>
+
 	</div>
 	</div>				
 				</>
