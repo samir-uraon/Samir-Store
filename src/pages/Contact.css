@@ -10,7 +10,7 @@ flex-direction: column;
 }
 
 #ContactHead{
-	margin-top: 6rem;
+	margin-top: 3rem;
 	font-size: 2rem;
 	
 }
@@ -281,11 +281,16 @@ font-size: 1.4rem;
 	}
 }
 
-
+@media screen and (max-height:270px) {
+	:root{
+		font-size: 42%;
+	}
+	
+	}
 
 @media screen and (max-height:280px) {
 :root{
-	font-size: 43%;
+	font-size: 41%;
 }
 
 }
