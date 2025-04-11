@@ -1,11 +1,16 @@
 import React from 'react'
 import Header from '../navbar/header'
+import FirstBanner from './FirstBanner'
+import AboutMain from './AboutMain'
+import Footer from './footer'
 const About = () => {
+
 		return (
 			<>
 			<Header/>
-				<div style={{width:"100vw",height:"90%",color:"white",display:"flex",justifyContent:"center",alignItems:"center"}}><h1>About</h1></div>
-				
+			<FirstBanner name="Samir Store"/>
+<AboutMain/>
+				<Footer/>
 				</>
 		)
 }

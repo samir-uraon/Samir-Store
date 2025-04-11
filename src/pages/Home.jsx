@@ -37,20 +37,22 @@ const Home = () => {
 
 					<div className='socialicon'>
 <a href="http://" target="_blank" > <TiSocialFacebook className='f' onClick={()=>{
-	window.location.href="http://github.com"
+	window.location.href="https://www.youtube.com/@UraonTechnical"
 }}/></a>
 <TiSocialYoutube className='y' onClick={()=>{
-	window.location.href="http://github.com"
+	window.location.href="https://www.youtube.com/@UraonTechnical"
 }}/>
 <TiSocialLinkedin className='l' onClick={()=>{
-	window.location.href="http://github.com"
+	window.location.href="https://www.youtube.com/@UraonTechnical"
 }}/>
 <TiSocialTwitter className='t' onClick={()=>{
-	window.location.href="http://github.com"
+	window.location.href="https://www.youtube.com/@UraonTechnical"
 }}/>
 					</div>
 					<div id='readmore'>
-						<button>Read More</button>
+						<button  onClick={()=>{
+	window.location.href="https://www.canva.com/design/DAGkNil95cw/HN2fZz5S4bIKC86j-dFDQA/view?utm_content=DAGkNil95cw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9fb4f69bd9"
+}}>Read More</button>
 					</div>
 					</div>
 

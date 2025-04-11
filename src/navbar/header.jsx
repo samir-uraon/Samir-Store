@@ -2,6 +2,9 @@ import React from 'react'
 import { useRef ,useState} from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
+import { FiShoppingCart } from "react-icons/fi";
+
+
 import {NavLink} from "react-router-dom"
 import './header.css'
 const Header = () => {
@@ -43,7 +46,10 @@ const check=()=>{
 				<li><NavLink to={"/About"}>About</NavLink></li>
 				<li><NavLink to={"/Products"}>Products</NavLink></li>
 				<li><NavLink to={"/Contact"}>Contact</NavLink></li>
-					</ul>
+				<div className='extra'>
+				<NavLink to={"/Login"} className={"login"}>Login</NavLink>
+				<NavLink to={"/Cart"} className={"cart"}><FiShoppingCart className='toly'/><span className='cart-total'>10</span></NavLink>
+					</div></ul>
 
 					<div className='menu-button'>
 <button ref={Icon} onClick={handalIcon}>

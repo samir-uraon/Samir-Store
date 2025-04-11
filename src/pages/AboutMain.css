@@ -1,0 +1,214 @@
+.main-a{
+	max-width: 100%;
+
+	padding: 3rem 0;
+}
+.section-a1{
+	height: 56rem;
+	width: 100%;
+	padding: 3rem;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 10rem;
+	.head-a1{
+			padding: 0 6rem;
+		& p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: cadetblue;
+font-size: 1.4rem;
+		}
+		& h2{
+			font-size: 2.8rem;
+			font-family:sans-serif;
+			color: whitesmoke;
+		
+	
+		}
+	}
+
+.img-a1{
+max-width: 100%;
+
+	display: flex;
+justify-content: center;
+
+	& .imgs{
+		position: relative;
+		padding: 2rem;
+		background-color: rgb(75, 74, 74);
+transition: all 0.3s linear;
+width: 24rem;
+height:19rem;
+margin: 0 2rem;	
+cursor: pointer;
+border-radius: 0.2rem;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+&:hover{
+	height:30rem;
+}
+
+
+	}
+	& .imgs img{
+	border-radius: 0.6rem;
+   width:100%;
+			height:17rem;
+position: relative;
+top: -4.6rem;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	}
+}
+& .text-img{
+	text-align: center;
+	position: relative;
+	padding: 0rem 0.8rem;
+	top: -15rem;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+}
+& .imgs p{
+
+	font-family: monospace;
+	font-size: 1.2rem;
+	&:last-child{
+		margin-top: 0.8rem;
+		padding: 0.3rem 0.1rem;
+		background-color: #7F00FF;
+		font-size: 1.4rem;
+	}
+}
+.imgs:hover .text-img{
+	top: -4rem;
+	opacity: 1;
+}
+}
+
+.section-a2{
+	max-width: 100%;
+
+	background-color: rgba(201, 198, 198, 0.039);
+	display: flex;
+	padding: 5rem 2rem;
+	justify-content: center;
+	align-items: center;
+	column-gap: 1rem;
+	& .a2-block1{
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+		border-radius: 0.5rem;
+		padding: 1rem;
+		font-family: sans-serif;
+		row-gap: 1rem;
+width: 19rem;
+height: 15rem;
+text-align: center;
+		background-color: aliceblue;
+		box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;	
+			font-size:2.5rem;
+		& p{
+			font-size: 1rem;
+			color: rgb(57, 57, 57);
+		}
+	}
+	& .a2-block2{
+		display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+row-gap: 2rem;
+padding: 1rem ;
+& .a2-block21,.a2-block22{
+
+	font-size:2.5rem;
+	column-gap: 1.4rem;
+	width: 19rem;
+	height: 6.4rem;
+background-color: aliceblue;
+border-radius: 0.5rem;
+display: flex;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;	
+
+
+	justify-content: center;
+	align-items: center;
+	& p{
+
+		font-size: 1rem;
+		font-family: sans-serif;
+		color: rgb(57, 57, 57);
+	}
+}
+	}
+}
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+.section-a3{
+	margin-top: 3rem;
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+& h3{
+ font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+		font-size: 1.7rem;
+		color: rgb(143, 145, 145);
+}
+	& .compaine-icon{
+		width: 50rem;
+		margin-top: 1.5rem;
+		padding: 2rem;
+	
+	}
+	& img{
+		width: 8rem;
+		height: 6rem;
+		margin: 0.2rem 2rem;
+	}
+}
+
+@media (max-width:830px) {
+	
+}
+@media screen and (max-width:480px) {
+
+	.img-a1{
+flex-direction: column;
+align-items: center;
+row-gap: 10rem;
+
+	}
+	.section-a1{
+		height: 116rem;
+	&	p{
+font-size: 1.3rem;
+		}
+		& h2{
+			font-size: 1.8rem;
+		}
+	}
+
+
+.imgs{
+	& img{
+		width:100%;
+		height:20rem;
+	}
+	& p{
+		font-size: 3rem;
+	}
+}
+}

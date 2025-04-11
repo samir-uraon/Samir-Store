@@ -41,9 +41,15 @@ return bool
 				<div className='secondi'><HiOutlineMail style={{backgroundColor:"rgb(233, 63, 21)",padding:"0.3rem",borderRadius:"2rem" ,fontSize:"2rem"}}/><p>Email : <a href="mailto:samiru.it.ug@jadavpuruniversity.in">samiru.it.ug@jadavpuruniversity.in</a></p></div>
 			</div>
 			<div className="icons2">
-<FaFacebook id='f'  style={{padding:"0.35rem",borderRadius:"0.45rem" ,fontSize:"2.5rem"}}/>
-<SiInstagram id='f'  style={{padding:"0.35rem",borderRadius:"0.45rem" ,fontSize:"2.5rem"}}/>
-<RiWhatsappFill id='f'  style={{padding:"0.35rem",borderRadius:"0.45rem" ,fontSize:"2.5rem"}}/>
+<FaFacebook id='f'  style={{padding:"0.35rem",borderRadius:"0.45rem" ,fontSize:"2.5rem"}} onClick={()=>{
+	window.location.href="https://www.youtube.com/@UraonTechnical"
+}}/>
+<SiInstagram id='f'  style={{padding:"0.35rem",borderRadius:"0.45rem" ,fontSize:"2.5rem"}} onClick={()=>{
+	window.location.href="https://www.youtube.com/@UraonTechnical"
+}}/>
+<RiWhatsappFill id='f'  style={{padding:"0.35rem",borderRadius:"0.45rem" ,fontSize:"2.5rem"}} onClick={()=>{
+	window.location.href="https://whatsapp.com/channel/0029Vb5ND3CCHDym5U93xG2M"
+}}/>
 			</div>
 		</div>
 

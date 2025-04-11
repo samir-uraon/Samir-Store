@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 .header{
 margin: 0;
-padding: 0.2rem;
+padding: 0.4rem 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -25,7 +27,7 @@ width: 100%;
 
 list-style: none;
 justify-content:flex-end;
-
+align-items: center;
 }
 
 
@@ -64,7 +66,7 @@ font-size: 1.7rem;
 
 
 
-.header .horizontal a{
+.header .horizontal li a{
 font-size: 1.5rem;
 cursor: pointer;
 padding: 0.3rem 1.6rem;
@@ -82,21 +84,20 @@ font-family: monospace;
 	color: white;
 }
 
-.header .horizontal .active{
+.header .horizontal li .active{
 	color: rgb(11, 240, 240);
 	font-weight: 600;
 }
 
 
-.header .horizontal li :last-child{
-	margin-right: 1.5rem;
-}
+
 
 .header .vertical li:hover{
 background-color: aliceblue;
 & a{
 	font-weight: 600;
 	color: #090909;
+	
 }
 }
 .header .vertical li a{
@@ -115,7 +116,7 @@ font-family: monospace;
 	display: none;
 }
 
-.header .vertical .active{
+.header .vertical li .active{
 	color: rgb(41, 230, 218);
 	font-weight: 700;
 }
@@ -133,31 +134,90 @@ font-family: monospace;
 
 }
 
+.extra{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.login{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	font-size: 1.5rem;
+cursor: pointer;
+padding: 0.1rem 1.6rem;
+border-radius: 0.4rem;
+background-color: rgb(41, 4, 99);
+
+color: white;
+font-family: "Inter", sans-serif;
+
+&:hover{
+color: white;
+background-color: rgb(49, 24, 159);
+}
+}
+.cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 2rem;
+	color: white;
+cursor: pointer;
+	margin: 0.3rem 2.5rem 0 1.5rem;
+	&:hover{
+		color: white;
+
+	}
+}
+.toly{
+	opacity: 0.7;
+	&:hover{
+		color: white;
+	opacity: 1;
+	}
+}
+.cart span{
+	text-align: center;
+	position: absolute;
+	margin-top: -1rem;
+	margin-left: 2.5rem;
+	font-size: 0.7rem;
+	padding:0.1rem 0.3rem;
+	border-radius: 50%;
+	background-color: rgb(53, 6, 84);
+}
 
 .header button:hover {
 	border-color: #d0d1da;
 }
 
+@media screen and (max-width:700px) {
+.header{
+	padding: 0.6rem;
+}
 
+}
 @media screen and (max-width:550px) {
 	.header .horizontal li a{
 		padding: 0.3rem 1.4rem;
 	}
 
 }
-@media screen and (max-width:530px) {
+@media screen and (max-width:540px) {
 	.header .horizontal li a{
-		padding: 0.3rem 1.2rem;
+		font-size: 1.7rem;
+		padding: 0.3rem 1.6rem;
 	}
-	.header{
-		padding: 0.5rem;
-	
-	}
+
 }
 @media screen and (max-width:510px) {
 	.header .horizontal li a{
-		padding: 0.3rem 0.9rem;
+
+		padding: 0.3rem 1.6rem;
 	}
+
 
 }
 @media screen and (max-width:480px) {
@@ -175,6 +235,12 @@ font-family: monospace;
 }
 .header .vertical{
 	margin-top: 0.2rem;
+}
+.extra{
+	width: 100%;
+		padding: 0.5rem 0  0.6rem 0;
+		flex-direction: row-reverse;
+justify-content: space-around;
 }
 }
 

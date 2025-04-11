@@ -1,0 +1,152 @@
+.main-footer{
+	width: 100%;
+margin-top: 4rem;
+	background-color: rgb(8, 30, 61);
+
+	padding: 2rem 0rem 1.2rem 0rem;
+
+}
+.headpart{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: -5rem;
+}
+.headpart .textpart{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+padding: 1.4rem 1.5rem;
+width: 40rem;
+background-color: aliceblue;
+border-radius: 0.6rem;
+
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+& button{
+	padding: 0.7rem 0.7rem;
+	font-size: 0.9rem;
+	font-family:Arial, Helvetica, sans-serif;
+	border-radius: 0;
+
+}
+& p{
+	color: black;
+	padding: 0rem 0 0 1rem;
+	font-size: 0.9rem;
+	font-family: sans-serif;
+}
+}
+
+.downpart{
+	width: 100%;
+	padding: 0 1rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+& .down{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	column-gap: 2rem;
+}
+#fp{
+	width: 16rem;
+}
+.down1{
+
+	& h2{
+		font-size: 1.7rem;
+		font-family: monospace;
+	}
+	& p{
+		margin-top: 0.8rem;
+		font-size: 1rem;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+
+}
+& .e{
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 1rem;
+	width: 19rem;
+	margin: 0 1rem;
+	& p{
+	line-height: 1.7rem;
+	}
+	& input{
+		outline: none;
+		border: none;
+		padding: 0.5rem 0  0.5rem 0.5rem;
+		background-color: azure;
+		border-radius: 0.3rem;
+		color: rgb(92, 90, 90);
+		border-radius: 0;
+	}
+& button{
+	margin-top: 1rem;
+	border-radius: 0;
+	&:hover{
+		background-color:rgb(11, 54, 147);
+	}
+}
+}
+
+.i{
+margin: 0 1rem;
+	& h2{
+		
+		margin-bottom: 1.7rem;
+		font-size: 1.4rem;
+	}
+	.dicons{
+		display: flex;
+		flex-direction: row;
+		column-gap: 1.8rem;
+		font-size: 2.5rem;
+	}
+}
+
+.L1{
+	& h2{
+		font-size: 1.4rem;
+	}
+
+	& p{
+		font-family: monospace;
+		font-size: 1.1rem;
+		color: rgb(41, 126, 211);
+				width: 16rem;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.firstd{
+	padding-bottom: 2.8rem;
+
+	width: 100%;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	
+}
+.finish{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+@media screen and (max-width:670px) {
+	.firstd{
+flex-wrap: wrap;
+row-gap: 6rem;
+	}
+}

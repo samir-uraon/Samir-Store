@@ -14,6 +14,22 @@ button{
 	background-color: #242424;
 	color: white;
 }
+.justbutton{
+	border: none;
+	color: aliceblue;
+	transition: all 0.3s linear;
+cursor: pointer;
+
+	background-color: #7F00FF;
+font-family:monospace;
+	padding: 0.4rem 1.2rem;
+		font-size: 1.3rem;
+	border-radius: 0.5rem	;
+	&:hover{
+		background-color: #6f31ae;
+		color: aliceblue;
+	}
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

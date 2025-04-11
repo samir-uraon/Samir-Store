@@ -94,7 +94,7 @@ color: white;
 border: none;
 		color: rgb(0, 0, 0);
 		transition: all 0.3s linear;
-	
+	cursor: pointer;
 		background-color: cyan;
 		border: 0.1rem solid cyan;
 		padding: 0.4rem 1.6rem 0.35rem 1.6rem;
