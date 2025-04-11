@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../navbar/header'
 import FirstBanner from './FirstBanner'
 import AboutMain from './AboutMain'
-import Footer from './footer'
+import Footer from './Footer'
 const About = () => {
 
 		return (
