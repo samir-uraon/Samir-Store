@@ -135,6 +135,7 @@ font-family: monospace;
 }
 
 .extra{
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -238,9 +239,10 @@ cursor: pointer;
 }
 .extra{
 	width: 100%;
-		padding: 0.5rem 0  0.6rem 0;
+
 		flex-direction: row-reverse;
 justify-content: space-around;
+padding: 0.5rem 0  2rem 0;
 }
 }
 
