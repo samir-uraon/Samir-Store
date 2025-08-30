@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import Header from "../navbar/header"
 import "./ProductPage.css"
+import { useNavigate } from "react-router-dom"
 
 const products = [
   { id: 1, name: "Gold Necklace", price: "₹45,000", image: "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcR4JjGf6OELuGfXT2_Rlhp492_D7uba7tSDP6wGFg9x9VEplbC1WRK5xc8lZw4J8js84dtUkYcNxxGdAF60t0o7RNIA5xomU_Wb7y0id0KK7bFgAnY", category: "Women" },
@@ -11,6 +12,7 @@ const products = [
 ]
 
 export default function ProductPage() {
+  let navigate=useNavigate()
   const { id } = useParams()
   const product = products.find(p => p.id === parseInt(id))
 
@@ -19,6 +21,7 @@ export default function ProductPage() {
   return (
 			<>
 			<Header/>
+      								<button onClick={()=>{navigate(-1)}} id='pb'><i className="fa-solid fa-arrow-left"></i></button>
     <div className="product-page">
       <img src={product.image} alt={product.name} />
       <div className="product-info">
