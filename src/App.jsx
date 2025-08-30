@@ -8,6 +8,7 @@ import About from "./pages/About"
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import Error from './pages/Error'
+import ProductPage from './pages/ProductPage'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,6 +24,7 @@ function App() {
       <Route path='/Contact' element={<Contact/>} />
       <Route path='/Login' element={<Products/>} />
       <Route path='/Cart' element={<Contact/>} />
+      <Route path="/product/:id" element={<ProductPage />} />
       <Route path="*" element={<Error/>} />
     </Routes>
     </BrowserRouter>

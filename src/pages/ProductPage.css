@@ -1,0 +1,82 @@
+.product-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  background:rgb(51, 51, 52);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Left side: image */
+.product-page img {
+  width: 32rem;
+  height: 28rem;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+/* Right side: product details */
+.product-info {
+	font-size: 1rem;
+  flex: 1;
+  text-align: left;
+}
+
+.product-info h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e5b200;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.product-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.buy-btn {
+  padding: 12px 25px;
+  background: #e5b200;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: #c49c00;
+}
+
+.cart-btn {
+  padding: 12px 25px;
+  background: #333;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+  background: #000;
+}

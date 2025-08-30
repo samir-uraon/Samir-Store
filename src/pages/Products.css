@@ -1,0 +1,158 @@
+.product-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #621c82;
+}
+
+/* Controls: search + filter */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.controls input {
+  padding: 10px 15px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.controls input:focus {
+  border-color: #e5b200;
+  outline: none;
+}
+
+.controls select {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls select:hover {
+  border-color: #e5b200;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Flip Card */
+.flip-card {
+  background: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front side */
+.flip-card-front, 
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+/* Front */
+.flip-card-front {
+  background:#323131;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.flip-card-front h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #f3efef;
+		font-family: sans-serif;
+}
+
+/* Back */
+.flip-card-back {
+  background: #323131;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.flip-card-back h3 {
+	font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #f7f4f4;
+}
+
+.flip-card-back p {
+  margin: 5px 0;
+  color: #f9f6f6;
+		font-size: 1.4rem;
+}
+
+.category {
+  font-size: 0.9rem;
+  color: #f7f5f5;
+}
+
+.buy-btn {
+  margin-top: 15px;
+   background: #e5b200;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: #c49c00;
+}
+
+/* No products */
+.no-products {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #777;
+}
