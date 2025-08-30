@@ -45,6 +45,16 @@ font-size: 62.5%;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#pb{
+	padding: 0.3rem 1.5rem ;
+	color: #646cff;
+	border: none;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	background-color: aquamarine;
+	margin: 1rem;
+	position: absolute;
+}
 a {
   font-weight: 500;
   color: #646cff;

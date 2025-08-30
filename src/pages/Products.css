@@ -1,14 +1,14 @@
 .product-section {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 120rem;
+  margin: 4rem auto;
+  padding: 2rem;
   text-align: center;
 }
 
 .section-title {
   font-size: 3.5rem;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
   color: #621c82;
 }
 
@@ -16,16 +16,16 @@
 .controls {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 30px;
+  gap: 1rem;
+  margin-bottom: 3rem;
   flex-wrap: wrap;
 }
 
 .controls input {
-  padding: 10px 15px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 1rem 1rem;
+  width: 25rem;
+  border: rem solid #ccc;
+  border-radius: rem;
   font-size: 1.3rem;
   transition: 0.3s;
 }
@@ -36,9 +36,9 @@
 }
 
 .controls select {
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 1rem 1rem;
+  border: rem solid #ccc;
+  border-radius: rem;
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
@@ -51,14 +51,14 @@
 /* Product Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 2rem;
 }
 
 /* Flip Card */
 .flip-card {
   background: transparent;
-  perspective: 1000px;
+  perspective: 100rem;
 }
 
 .flip-card-inner {
@@ -79,7 +79,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
+  border-radius: 1rem;
   backface-visibility: hidden;
   overflow: hidden;
 }
@@ -91,18 +91,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .flip-card-front img {
   width: 100%;
-  height: 200px;
+  height: 20rem;
   object-fit: cover;
-  border-bottom: 1px solid #eee;
+  border-bottom: rem solid #eee;
 }
 
 .flip-card-front h3 {
-  margin-top: 15px;
+  margin-top: 1rem;
   font-size: 1.5rem;
   color: #f3efef;
 		font-family: sans-serif;
@@ -116,17 +116,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .flip-card-back h3 {
 	font-size: 1.8rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #f7f4f4;
 }
 
+
 .flip-card-back p {
-  margin: 5px 0;
+  margin: rem 0;
   color: #f9f6f6;
 		font-size: 1.4rem;
 }
@@ -137,11 +138,11 @@
 }
 
 .buy-btn {
-  margin-top: 15px;
+  margin-top: 1rem;
    background: #e5b200;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -153,6 +154,7 @@
 /* No products */
 .no-products {
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin-top: 2rem;
   color: #777;
 }
+
