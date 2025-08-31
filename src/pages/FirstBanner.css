@@ -6,7 +6,7 @@
 .grid{
 	display: grid;
 padding: 3rem 6rem;
-margin-left: 4rem;
+
 	gap: 0rem;
 }
 .grid-two{

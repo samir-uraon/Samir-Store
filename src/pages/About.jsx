@@ -7,10 +7,11 @@ const About = () => {
 
 		return (
 			<>
-			<Header/>
+ 		<Header/>
 			<FirstBanner name="Samir Store"/>
 <AboutMain/>
 				<Footer/>
+	 
 				</>
 		)
 }
