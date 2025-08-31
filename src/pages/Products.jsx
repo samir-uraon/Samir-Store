@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState ,useEffect} from "react"
 import { Link } from "react-router-dom"
 import Header from '../navbar/header'
 import "./Products.css"
@@ -14,12 +14,21 @@ const products = [
 export default function ProductSection() {
   const [search, setSearch] = useState("")
   const [filter, setFilter] = useState("All")
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {   
+    setItems(products);
+  }, []);
+
+
 
   const filteredProducts = products.filter((product) => {
     const matchesCategory = filter === "All" || product.category === filter
     const matchesSearch = product.name.toLowerCase().includes(search.toLowerCase())
     return matchesCategory && matchesSearch
   })
+
+
 
   return (
     <>
@@ -32,8 +41,14 @@ export default function ProductSection() {
             type="text"
             placeholder="Search for a product..."
             value={search}
+          list="inputlist"
             onChange={(e) => setSearch(e.target.value)}
           />
+          <datalist id="inputlist">
+        {items.map((item) => (
+          <option key={item.id} value={item.name} />
+        ))}
+      </datalist>
 
           <select value={filter} onChange={(e) => setFilter(e.target.value)}>
             <option value="All">All</option>
